@@ -12,4 +12,4 @@ class Solution:
                     stack.append(']')
                 case _ if((len(stack) == 0) or (stack.pop() != c)):
                     return False
-        return False if stack else True;
+        return False if stack else True
