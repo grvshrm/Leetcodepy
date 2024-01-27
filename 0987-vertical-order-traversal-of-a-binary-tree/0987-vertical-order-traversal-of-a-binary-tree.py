@@ -22,6 +22,5 @@ class Solution:
         vertMap = dict(sorted(vertMap.items()))
         ans = defaultdict(list)
         for key, item in vertMap.items():
-            #if key[0] in ans:
             ans[key[0]].extend(sorted(item))
         return ans.values() 
