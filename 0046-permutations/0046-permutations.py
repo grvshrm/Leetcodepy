@@ -1,7 +1,7 @@
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
         n = len(nums)
-        l, r = 0, n-1
+        l = 0
         ans = []
         def permuteUtil(nums, l):
             if l == n-1:
