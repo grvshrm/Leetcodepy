@@ -10,7 +10,7 @@ class Solution:
         while i < j:
             curr_sum = sorted_nums[i]+sorted_nums[j]
             if curr_sum == target:
-                ans = [ind_nums[sorted_nums[i]][0], ind_nums[sorted_nums[j]][0]] if sorted_nums[i] != sorted_nums[j] else [ind_nums[sorted_nums[i]][0], ind_nums[sorted_nums[i]][1]]
+                ans = [ind_nums[sorted_nums[i]][0], ind_nums[sorted_nums[j]][0]] if sorted_nums[i] != sorted_nums[j] else ind_nums[sorted_nums[i]]
                 break
             elif curr_sum < target:
                 i+=1
