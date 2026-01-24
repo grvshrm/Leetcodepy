@@ -4,8 +4,6 @@ class Solution:
         ind_nums = defaultdict(list)
         for i in range(len(nums)):
             ind_nums[nums[i]].append(i)
-
-        print(ind_nums)
         sorted_nums = list(sorted(nums))
         i, j = 0, len(nums)-1
         ans = list()
