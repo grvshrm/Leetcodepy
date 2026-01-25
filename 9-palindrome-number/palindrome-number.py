@@ -11,6 +11,4 @@ class Solution:
                 reverse = reverse * 10
             reverse = reverse + num%10
             num = num // 10
-        print(x)
-        print(reverse)
         return x == reverse
