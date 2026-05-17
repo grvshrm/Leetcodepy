@@ -1,4 +1,4 @@
-# Directed Graph Cycle
+<h2><a href="https://www.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1">Directed Graph Cycle</a></h2>
 
 **Difficulty:** Medium
 **Accuracy:** 27.88%
