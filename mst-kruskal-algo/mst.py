@@ -20,21 +20,14 @@ class DSU:
             self.parent[parent_v] = parent_u
             self.size[parent_u] += self.size[parent_v]
 
-# ds = DSU(7)
-# ds.union_by_size(1, 2)
-# ds.union_by_size(2, 3)
-# ds.union_by_size(4, 5)
-# ds.union_by_size(6, 7)
-# ds.union_by_size(5, 6)
+class Solution:
+    def spanningTree(self, V, edges):
+        dsu = DSU(V)
+        edges.sort(key = lambda x: x[2])
 
-# if (ds.find_parent(3) == ds.find_parent(7)):
-#     print("same")
-# else:
-#     print("not same")
-
-# ds.union_by_size(3, 7)
-
-# if (ds.find_parent(3) == ds.find_parent(7)):
-#     print("same")
-# else:
-#     print("not same")
+        mst_wt = 0
+        for u, v, wt in edges:
+            if dsu.find_parent(u) != dsu.find_parent(v):
+                mst_wt += wt
+                dsu.union_by_size(u, v)
+        return mst_wt

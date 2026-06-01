@@ -6,7 +6,7 @@ class DSU:
     def find_parent(self, node: int):
         if node == self.parent[node]:
             return node
-        self.parent[node] = self.find_parent(node)
+        self.parent[node] = self.find_parent(self.parent[node])
         return self.parent[node]
 
     def union_by_rank(self, u: int, v: int):
