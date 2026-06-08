@@ -1,7 +1,7 @@
-````markdown
 # [Maximum Path Sum in Matrix](https://www.geeksforgeeks.org/problems/path-in-matrix3805/1)
 
 ## Difficulty
+
 Medium
 
 ## Problem Statement
@@ -23,13 +23,14 @@ Find the **maximum possible sum** of a path that starts from any column in the f
 ### Example 1
 
 **Input**
+
 ```text
 mat = [
   [3, 6, 1],
   [2, 3, 4],
   [5, 5, 1]
 ]
-````
+```
 
 **Output**
 
@@ -110,9 +111,6 @@ There is only one cell in the matrix, so the maximum path sum is `25`.
 
 ## Constraints
 
-* `1 ≤ mat.size() ≤ 500`
-* `1 ≤ mat[i].size() ≤ 500`
-* `1 ≤ mat[i][j] ≤ 1000`
-
-```
-```
+- `1 ≤ mat.size() ≤ 500`
+- `1 ≤ mat[i].size() ≤ 500`
+- `1 ≤ mat[i][j] ≤ 1000`
