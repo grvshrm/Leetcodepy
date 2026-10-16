@@ -22,12 +22,8 @@ class Solution:
                 temp.next = j
                 j = j.next
             temp = temp.next
-        while i != None:
+        if i != None:
             temp.next = i
-            i = i.next
-            temp = temp.next
-        while j != None:
+        if j != None:
             temp.next = j
-            j = j.next
-            temp = temp.next
         return h.next
