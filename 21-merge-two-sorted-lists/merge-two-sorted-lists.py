@@ -5,6 +5,12 @@
 #         self.next = next
 class Solution:
     def mergeTwoLists(self, l1: ListNode | None, l2: ListNode | None) -> ListNode | None:
+        if not l1:
+            return l2
+        if not l2:
+            return l1
+        if not l1 and not l2:
+            return None
         i, j = l1, l2
         temp = ListNode()
         h = temp
